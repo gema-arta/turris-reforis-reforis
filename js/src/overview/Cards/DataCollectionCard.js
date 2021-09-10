@@ -41,7 +41,7 @@ function DataCollectionCard({ details: { eula } }) {
                     <div className="row align-items-center">
                         <div className="col">
                             <h6 className="text-uppercase text-muted mb-2">
-                                {_("Attack detection")}
+                                {_("Threat Detection")}
                             </h6>
                             <span className="status">
                                 {eula === 1 ? _("Activated") : _("Disabled")}

@@ -49,7 +49,7 @@ describe("<Cards/>", () => {
         it("Snapshot: activated", async () => {
             const { container } = render(<DataCollectionCard />);
             mockAxios.mockResponse({ data: dataCollectionCardFixture });
-            await wait(() => getByText(container, "Attack detection"));
+            await wait(() => getByText(container, "Threat Detection"));
 
             expect(container).toMatchSnapshot();
         });
@@ -57,7 +57,7 @@ describe("<Cards/>", () => {
         it("Snapshot: disabled", async () => {
             const { container } = render(<DataCollectionCard />);
             mockAxios.mockResponse({ data: dataCollectionCardFixture2 });
-            await wait(() => getByText(container, "Attack detection"));
+            await wait(() => getByText(container, "Threat Detection"));
 
             expect(container).toMatchSnapshot();
         });

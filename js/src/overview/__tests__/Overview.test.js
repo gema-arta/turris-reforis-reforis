@@ -51,7 +51,7 @@ describe("Overview", () => {
         await wait(() => getByText(container, "Automatic Updates"));
 
         mockAxios.mockResponse({ data: dataCollectionCardFixture });
-        await wait(() => getByText(container, "Attack detection"));
+        await wait(() => getByText(container, "Threat Detection"));
 
         mockAxios.mockResponse({ data: netmetrCardFixture });
         await wait(() => getByText(container, "NetMetr"));
